@@ -1,0 +1,6 @@
+package com.amoltarapure.pages.pageObjectModel.vwo.normal_POM;
+
+public class SupportPage
+{
+    // Contact
+}

@@ -1,6 +1,6 @@
 # Selenium Automation Framework(with Java)
 
-Author - Pramod Dutta
+Author - Amol Tarapure
 
 
 - Java, Selenium, TestNG

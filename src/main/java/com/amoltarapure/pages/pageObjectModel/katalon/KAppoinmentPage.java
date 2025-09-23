@@ -1,4 +1,6 @@
 package com.amoltarapure.pages.pageObjectModel.katalon;
 
-public class KAppoinmentPage {
+public class KAppoinmentPage
+{
+
 }
