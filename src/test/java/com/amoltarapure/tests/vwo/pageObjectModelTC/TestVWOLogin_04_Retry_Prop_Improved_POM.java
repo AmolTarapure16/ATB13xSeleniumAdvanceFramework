@@ -3,7 +3,6 @@ package com.amoltarapure.tests.vwo.pageObjectModelTC;
 import com.amoltarapure.base.CommonToAllTest;
 import com.amoltarapure.listeners.RetryAnalyzer;
 import com.amoltarapure.utils.TakeScreenShot;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.apache.logging.log4j.LogManager;
@@ -12,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-import static com.amoltarapure.driver.DriverManger.getDriver;
+import static com.amoltarapure.driver.DriverManager.getDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Test(retryAnalyzer = RetryAnalyzer.class)

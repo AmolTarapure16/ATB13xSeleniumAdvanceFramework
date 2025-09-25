@@ -4,7 +4,7 @@ import com.amoltarapure.utils.PropertiesReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static com.amoltarapure.driver.DriverManger.getDriver;
+import static com.amoltarapure.driver.DriverManager.getDriver;
 
 public class CommonToAllPage
 {

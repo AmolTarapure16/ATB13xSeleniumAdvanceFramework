@@ -12,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import static com.amoltarapure.driver.DriverManger.getDriver;
+import static com.amoltarapure.driver.DriverManager.getDriver;
 
 @Listeners(ScreenshotListener.class)
 @Test(retryAnalyzer = RetryAnalyzer.class)

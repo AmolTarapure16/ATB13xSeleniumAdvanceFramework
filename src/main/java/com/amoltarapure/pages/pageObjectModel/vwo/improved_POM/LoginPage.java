@@ -1,12 +1,11 @@
 package com.amoltarapure.pages.pageObjectModel.vwo.improved_POM;
 
 import com.amoltarapure.base.CommonToAllPage;
-import com.amoltarapure.utils.PropertiesReader;
 import com.amoltarapure.utils.WaitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static com.amoltarapure.driver.DriverManger.getDriver;
+import static com.amoltarapure.driver.DriverManager.getDriver;
 
 public class LoginPage extends CommonToAllPage
 {

@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import static com.amoltarapure.driver.DriverManger.getDriver;
+import static com.amoltarapure.driver.DriverManager.getDriver;
 
 public class TakeScreenShot
 {

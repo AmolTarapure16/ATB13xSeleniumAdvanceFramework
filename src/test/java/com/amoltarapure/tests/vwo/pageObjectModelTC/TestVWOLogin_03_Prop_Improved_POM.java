@@ -1,6 +1,6 @@
 package com.amoltarapure.tests.vwo.pageObjectModelTC;
 import com.amoltarapure.base.CommonToAllTest;
-import com.amoltarapure.driver.DriverManger;
+import com.amoltarapure.driver.DriverManager;
 import com.amoltarapure.pages.pageObjectModel.vwo.improved_POM.DashBoardPage;
 import com.amoltarapure.pages.pageObjectModel.vwo.improved_POM.LoginPage;
 import com.amoltarapure.utils.PropertiesReader;
@@ -33,7 +33,7 @@ public class TestVWOLogin_03_Prop_Improved_POM extends CommonToAllTest
 
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage = new LoginPage(DriverManger.getDriver());
+        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         String error_msg = loginPage.loginToVWOLoginInvalidCreds(PropertiesReader.readKey("invalid_username"),PropertiesReader.readKey("invalid_password"));
 
         // Assertions - 3 - V
@@ -56,10 +56,10 @@ public class TestVWOLogin_03_Prop_Improved_POM extends CommonToAllTest
 
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage_VWO = new LoginPage(DriverManger.getDriver());
+        LoginPage loginPage_VWO = new LoginPage(DriverManager.getDriver());
         loginPage_VWO.loginToVWOLoginValidCreds(PropertiesReader.readKey("username"),PropertiesReader.readKey("password"));
 
-        DashBoardPage dashBoardPage  = new DashBoardPage(DriverManger.getDriver());
+        DashBoardPage dashBoardPage  = new DashBoardPage(DriverManager.getDriver());
         String usernameLoggedIn = dashBoardPage.loggedInUserName();
 
         assertThat(usernameLoggedIn).isNotBlank().isNotNull().isNotEmpty();

@@ -1,7 +1,7 @@
 package com.amoltarapure.tests.vwo.DataDrivenTesting;
 
 import com.amoltarapure.base.CommonToAllTest;
-import com.amoltarapure.driver.DriverManger;
+import com.amoltarapure.driver.DriverManager;
 import com.amoltarapure.pages.pageObjectModel.vwo.improved_POM.LoginPage;
 import com.amoltarapure.utils.PropertiesReader;
 import com.amoltarapure.utilsExcel.UtilExcel;
@@ -24,7 +24,7 @@ public class DataDrivenTesting extends CommonToAllTest
     public void test_vwo_login(String email, String password) {
 
         // Page Class Code (POM Code) - 2 - L
-        LoginPage loginPage = new LoginPage(DriverManger.getDriver());
+        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         String error_msg = loginPage.loginToVWOLoginInvalidCreds(email,password);
 
         // Assertions - 3 - V

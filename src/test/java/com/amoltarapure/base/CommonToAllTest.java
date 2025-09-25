@@ -1,6 +1,6 @@
 package com.amoltarapure.base;
 
-import com.amoltarapure.driver.DriverManger;
+import com.amoltarapure.driver.DriverManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -9,13 +9,13 @@ public class CommonToAllTest
     @BeforeMethod
     public void setUp()
     {
-        DriverManger.init();
+        DriverManager.init();
     }
 
     @AfterMethod
     public void tearDown()
     {
-        DriverManger.down();
+        DriverManager.down();
     }
 
 }
